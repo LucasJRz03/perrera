@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src ="http://unpkg.com/lucide@latest"></script>
+    <title>Search Music</title>
+  </head>
+  <body class="layout-grid min-h-screen bg-[url(https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center">
+    <div class="header "><h1 class="font-sans text-black-500 text-9xl">Busca tu música</h1></div>
+   <!--SIDEBAR-->
+    <div class="sidebar bg-gray-600 p-4 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-bold mb-5 bg-black text-white pl-2">Géneros:</h2>
+      <ul class="space-y-2">
+        <li class="hover:text-green-600 cursor-pointer font-sans text-black text-3xl">
+          <i data-lucide="music-2" class="w-5 h-5"></i>Pop</li>
+        <li class="hover:text-green-600 cursor-pointer font-sans text-black text-3xl">
+          <i data-lucide="radio" class="w-5 h-5"></i>Rock</li>
+        <li  class="hover:text-green-600 cursor-pointer font-sans text-black text-3xl">
+          <i data-lucide="headphones" class="w-5 h-5"></i>Jazz</li>
+        <li class="hover:text-green-600 cursor-pointer font-sans text-black text-3xl">
+          <i data-lucide="music" class="w-5 h-5"></i>Clásica</li>
+        <li class="hover:text-green-600 cursor-pointer font-sans text-black text-3xl">
+          <i data-lucide="hop" class="w-5 h-5"></i>Hip-Hop</li>
+      </ul>
+      <br>
+      <h2 class="text-3xl font-bold mb-5 bg-black text-white pl-2">Favoritos:</h2>
+      <ul>
+        <li class="hover:text-green-600 cursor-pointer font-sans text-black text-3xl">Coldplay</li>
+        <li class="hover:text-green-600 cursor-pointer font-sans text-black text-3xl">Imagine Dragons</li>
+      </ul>
+    </div>
+    <!---MAIN-->
+     <div class="main bg-gray-600 rounded-9xl" margin-top="20px">
+      <form id="searchForm">
+        <input  type="text" size="40" id="artistaInput" placeholder="Nombre del artista o canción" class="border p-2 rounded" required>
+         <br>
+        <button type="submit" class="bg-green-500 text-while px-4 py-2 rounded">Buscar</button>
+      </form>
+      <div id="app">
+        <br>
+      </div>
+
+     </div>
+     <!---FOOTER-->
+    <div class="footer bg-gray-900 text-gray-300 py-6 mt-8 text-center rounded-t-2xl">
+  <p class="text-sm">Search Music App — Desarrollado por <span class="font-semibold text-white">Lucas Rodríguez</span></p>
+  <p class="text-sm">Datos obtenidos de <a href="https://rapidapi.com" target="_blank" class="text-green-400 hover:underline">RapidAPI</a></p>
+  <div class="flex justify-center space-x-6 mt-4">
+    <a href="https://github.com/LucasJRz03" target="_blank" class="hover:text-black">GitHub</a>
+    <a href="https://www.instagram.com/rodriguez_lucas_03/" target="_blank" class="hover:text-black">Instagram</a>
+    <a href="rodriguezlucasjesus196@gmail.com" class="hover:text-black"> Contacto</a>
+  </div>
+</div>
+    <!--SCRIPT-->
+  <script src="main.js">
+  </script>
+ <script>
+ lucide.createIcons();
+
+ </script>
+</body> 
+</html>
